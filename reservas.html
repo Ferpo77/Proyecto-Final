@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferpohotel</title>
+    <link rel="stylesheet" href="css/reservas1.css">
+    <script src="https://kit.fontawesome.com/f49f6002f0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+           <a href="index.html" class="logo">
+            <img src="IMG/logo.png">
+            <h2 class="log">FerpoHotel </h2>
+            </a>     
+            <nav>
+                <a href="#Habitaciones">Habitaciones</a>
+                <a href="#Serv">Servicios</a>
+                <a href="#reservas">Reservas</a>
+                <a href="#">Administración</a>
+            </nav>
+        </div>
+    </header>
+    <section id="form">
+    <div class="container">
+        <form name="formulario" action="Principal.php" method="post">
+            <p>Nombre completo:</p>
+            <input name="nombre" maxlength="25" type="text" required>
+
+            <p>Ingrese su DNI:</p>
+            <input type="text" pattern="[0-9]+" name="dni" maxlength="10" required>
+            <p>Ingreso: </p>
+            <input type="date" name="entrada" required>
+            <p>Egreso:</p>
+            <input type="date" name="salida" required><br>
+            <p>Ingrese el tipo de habitación: </p>
+            <select name="cbox">
+                <option value="" selected>Seleccione uno...</option>
+                <option value="1">Simple</option>
+                <option value="2">Premium</option>
+                <option value="3">Matrimonial</option>
+            </select>
+            <br>
+                <div class="btn3">
+                <input class="reserv" type="submit" value="Reservar">
+                </div>
+            </form>
+    </div>
+    </section>
+</body>
+
+<footer>
+    <section id="pie">
+        <div class="container">
+            <div class="copy">
+                <p>&copy; FerpoHotel 2022</p>
+            </div> 
+        </div>    
+    </section> 
+</footer> 
+
+</html>
+
+    

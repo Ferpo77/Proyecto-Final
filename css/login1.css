@@ -1,0 +1,305 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1{font-size: 3em;}
+h2{font-size: 2.2em;}
+h3{font-size: 2em;}
+ul{list-style: none;}
+
+body{
+    font-family: Verdana;
+    margin: 0;
+}
+.reserv{
+    font-size: 2em;
+    font-weight: bold;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: 1.5px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 1);
+    color: white;
+    background-color: rgba(21, 34, 148, 0.849);
+
+}
+
+button:hover{
+    background-color: black;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+
+.color-acento{
+    color: rgba(57, 31, 206, 0.884);
+}
+
+.color-B{
+    color: rgba(255, 255, 255);
+}
+
+header{
+    background-color: rgb(216, 223, 226);
+}
+
+header .logo img{
+    display: none;
+}
+
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+    padding: 10 5px;
+}
+
+header a{
+    font-size: 1.3em;
+    display: flex;
+    padding: 5px 5px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(57, 31, 206, 0.884)
+}
+
+header a:hover{
+    color: black;
+}
+header .log{
+    display: block;
+    font-size: bold;
+    height: 100px;
+}
+
+#form{
+    flex-direction: column;
+    background-color: rgb(191, 192, 194);
+    margin: auto;
+    max-width: 360px;
+    align-items: center;
+}
+
+#form .container{
+    margin-top: 155px;
+    margin-bottom: 200px;
+    padding-bottom: 10px;
+
+}
+
+#form p{
+    margin: auto;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 0.95em;
+}
+#form input{
+    font-family: Verdana;
+    margin: 5px;
+    border: solid 1px;
+    padding: 4px;
+    width: 95%;
+    border-radius: 6px;
+}
+
+#form select{
+    font-family: Verdana;
+    margin: 5px;
+    border: solid 1px;
+    padding: 4px;
+    margin-bottom: 10px;
+    width: 95%;
+    border-radius: 6px;
+
+}
+
+#form .reserv{
+    padding: 2px;
+    font-weight: lighter;
+    height: 50px;
+}
+
+#form .reserv:hover{
+    background-color: black;
+}
+
+#form .pass{
+    font-size: 2em;
+    font-weight: lighter;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: 1.5px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 1);
+    color: white;
+    background-color: rgba(21, 34, 148, 0.849);
+}
+
+footer{
+        
+    background-color:rgba(25, 25, 25, 25);
+    margin: auto;
+    height: 150px;
+}
+
+footer .container{
+    display: flex;
+    justify-content: right;
+}
+
+footer .copy{
+    justify-content:right;
+    color: white;
+}
+
+footer .copy p{
+    margin-top: 100px;
+}
+
+@media (min-width: 720px){
+    
+    header .container{
+        flex-direction: row;
+        display: flex;
+        height: 100px ;
+        align-items: flex-end;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+        padding: 20px;
+    }
+
+    header .logo h2{
+        display: block;
+        margin: 10px;
+        margin-top: 70px ;
+        display: flex;
+        font-size: 1.3em;
+    }
+
+    header .logo img{
+        display: block;
+        height: 70px;
+        margin-right: 10px;
+    }
+
+    header .logo{
+        display: flex;
+        height: 70px;
+    }
+
+    header .logo{
+        display: flex;
+        align-items: center;
+    }
+    header .container{
+        justify-content:  space-between;
+        align-items: center;
+        padding: 20px;
+    }
+    #form{
+        border-radius: 10px;
+    }
+    #form .container{
+        flex-direction: column;
+        background-color: rgb(191, 192, 194);
+        border-radius: 50px;
+        margin: auto;
+        margin-top: 100px;
+        max-width: 400px;
+        align-items: center;
+        
+        
+    }
+    
+    #form .container{
+        margin-top: 150px;
+        margin-bottom: 320px;
+        padding-bottom: 10px;
+    }
+    
+    #form p{
+        margin: auto;
+        padding: 10px;
+        font-weight: bold;
+        font-size: 0.95em;
+    }
+    
+    #form input{
+        font-family: Verdana;
+        margin: 5px;
+        border: solid 1px;
+        padding: 4px;
+        width: 95%;
+        border-radius: 6px;
+    }
+    
+    #form select{
+        font-family: Verdana;
+        margin: 5px;
+        border: solid 1px;
+        padding: 4px;
+        margin-bottom: 10px;
+        width: 95%;
+        border-radius: 6px;
+    
+    }
+    
+    #form .pass{
+        font-size: 2em;
+        font-weight: lighter;
+        padding: 10px 10px;
+        border-radius: 10px;
+        border: 1.5px solid rgba(0, 0, 0, 0.5);
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 1);
+        color: white;
+        background-color: rgba(21, 34, 148, 0.849);
+    }
+    
+    #form .pass:hover{
+        background-color: black;
+    }
+
+    .BAD{
+        color: red;
+        font-weight: bold;
+        
+    }
+
+    footer{
+        
+        background-color:rgba(25, 25, 25, 25);
+        margin: auto;
+        height: 150px;
+    }
+    
+    footer .container{
+        display: flex;
+        justify-content: right;
+    }
+    
+    footer .copy{
+        justify-content:right;
+        color: white;
+    }
+    
+    footer .copy p{
+        margin-top: 100px;
+    }
+}
